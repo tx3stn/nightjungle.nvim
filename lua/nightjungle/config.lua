@@ -16,6 +16,7 @@ M.defaults = {
     bash = true,
     c = true,
     comment = true,
+    dockerfile = true,
     go = true,
     html = true,
     java = true,
