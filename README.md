@@ -2,11 +2,11 @@
 <h1 align="center">nightjungle.nvim</h1>
 
 <p align="center">
-  <em>Dark & green with pops of color</em>
+  <img src="docs/logo.svg" alt="nightjungle.nvim logo" width="220" />
 </p>
 
 <p align="center">
-  <img src="docs/logo.svg" alt="nightjungle.nvim logo" width="220" />
+  <em>Dark & green with pops of color</em>
 </p>
 
 ## Overview
@@ -22,7 +22,7 @@ many years with some overriden base colors.
 
 ```lua
 {
-  "tristan/nightjungle.nvim",
+  "tx3stn/nightjungle.nvim",
   lazy = false,
   priority = 1000,
   config = function()
