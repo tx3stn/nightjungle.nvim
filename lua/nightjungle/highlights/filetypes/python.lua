@@ -1,4 +1,5 @@
 return {
+  ["@attribute.python"] = { fg = "cyan.base" },
   ["@conditional.python"] = { fg = "green.base" },
   ["@constant.builtin.python"] = { fg = "cyan.base" },
   ["@include.python"] = { fg = "green.base" },

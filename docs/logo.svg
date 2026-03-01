@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">nightjungle logo variant G</title>
+  <desc id="desc">Circular jungle icon with four left vines and a spaced five-leaf center plant.</desc>
+
+  <defs>
+    <clipPath id="clipCircleG">
+      <circle cx="128" cy="128" r="120" />
+    </clipPath>
+  </defs>
+
+  <circle cx="128" cy="128" r="120" fill="#0e1216" />
+
+  <g clip-path="url(#clipCircleG)">
+    <!-- Four left-side vines -->
+    <path d="M34 8 C20 40, 20 78, 34 114 C48 150, 48 186, 34 238" fill="none" stroke="#0A7868" stroke-width="4.8" stroke-linecap="round" opacity="0.76" />
+    <path d="M58 8 C44 40, 44 78, 58 114 C72 150, 72 186, 58 238" fill="none" stroke="#0A7868" stroke-width="5" stroke-linecap="round" opacity="0.8" />
+    <path d="M82 8 C70 40, 70 78, 82 114 C94 150, 94 186, 82 238" fill="none" stroke="#0A7868" stroke-width="4.5" stroke-linecap="round" opacity="0.78" />
+    <path d="M106 10 C96 42, 96 80, 106 116 C116 152, 116 188, 106 245" fill="none" stroke="#0A7868" stroke-width="4" stroke-linecap="round" opacity="0.74" />
+
+    <!-- Attached vine leaves -->
+    <!-- vine 1 TOP > BOTTOM -->
+		<g transform="translate(-29,-40) rotate(155 34 86) scale(0.7)">
+			<path d="M34 86 C25 82, 19 77, 16 68 C25 70, 31 75, 34 86 Z" fill="#0A7868" opacity="0.84" />
+		</g>
+		<g transform="translate(8,0) rotate(-15 34 164)">
+			<path d="M34 164 C25 160, 19 155, 16 146 C25 148, 31 153, 34 164 Z" fill="#0A7868" opacity="0.84" />
+		</g>
+		<g transform="translate(-16,-50) scale(0.8) rotate(50 34 200)">
+			<path d="M34 200 C43 196, 49 191, 52 182 C43 184, 37 189, 34 200 Z" fill="#0A7868" opacity="0.84" />
+		</g>
+
+    <!-- vine 2 TOP > BOTTOM -->
+    <path d="M34 52 C43 48, 49 43, 52 34 C43 36, 37 41, 34 52 Z" fill="#0A7868" opacity="0.84" />
+		<g transform="translate(4,10) scale(0.8) rotate(95 58 94)">
+			<path d="M58 94 C49 90, 43 85, 40 76 C49 78, 55 83, 58 94 Z" fill="#0A7868" opacity="0.88" />
+		</g>
+		<g transform="translate(17,30) scale(0.7)">
+			<path d="M34 126 C43 122, 49 117, 52 108 C43 110, 37 115, 34 126 Z" fill="#0A7868" opacity="0.84" />
+		</g>
+		<g transform="translate(2,30) scale(0.8) rotate(80 58 134)">
+			<path d="M58 134 C67 130, 73 125, 76 116 C67 118, 61 123, 58 134 Z" fill="#0A7868" opacity="0.88" />
+		</g>
+		<g transform="translate(38,80) scale(0.5) rotate(0 82 180)">
+			<path d="M82 180 C73 176, 67 171, 64 162 C73 164, 79 169, 82 180 Z" fill="#0A7868" opacity="0.84" />
+		</g>
+		<g transform="translate(26,120) scale(0.6) rotate(10 58 170)">
+    <path d="M58 170 C49 166, 43 161, 40 152 C49 154, 55 159, 58 170 Z" fill="#0A7868" opacity="0.88" />
+		</g>
+
+    <!-- vine 3 TOP > BOTTOM -->
+		<g transform="translate(-4,0)">
+			<path d="M58 60 C67 56, 73 51, 76 42 C67 44, 61 49, 58 60 Z" fill="#0A7868" opacity="0.88" />
+		</g>
+		<g transform="translate(-3,0) rotate(-5 82 108)">
+			<path d="M82 108 C73 104, 67 99, 64 90 C73 92, 79 97, 82 108 Z" fill="#0A7868" opacity="0.84" />
+		</g>
+		<g transform="translate(8,0) scale(0.95) rotate(0 106 194)">
+			<path d="M106 194 C97 190, 91 185, 88 176 C97 178, 103 183, 106 194 Z" fill="#0A7868" opacity="0.8" />
+		</g>
+
+    <!-- vine 4 TOP > BOTTOM -->
+		<g transform="translate(-4,-18) rotate(20 106 52)">
+			<path d="M106 52 C115 48, 121 43, 124 34 C115 36, 109 41, 106 52 Z" fill="#0A7868" opacity="0.8" />
+		</g>
+		<g transform="translate(1,-6) rotate(-10 82 72)">
+			<path d="M82 72 C91 68, 97 63, 100 54 C91 56, 85 61, 82 72 Z" fill="#0A7868" opacity="0.84" />
+		</g>
+		<g transform="translate(-4,10)">
+			<path d="M106 84 C115 80, 121 75, 124 66 C115 68, 109 73, 106 84 Z" fill="#0A7868" opacity="0.8" />
+		</g>
+		<g transform="translate(11,13) scale(0.9) rotate(-5 106 122)">
+			<path d="M106 122 C97 118, 91 113, 88 104 C97 106, 103 111, 106 122 Z" fill="#0A7868" opacity="0.8" />
+		</g>
+		<g transform="translate(50,110) scale(0.6) rotate(0 106 158)">
+			<path d="M106 158 C115 154, 121 149, 124 140 C115 142, 109 147, 106 158 Z" fill="#0A7868" opacity="0.8" />
+		</g>
+
+
+    <!-- Moon -->
+    <circle cx="188" cy="68" r="24" fill="#A4ACB8" />
+    <circle cx="178" cy="61" r="4" fill="#778489" />
+    <circle cx="192" cy="76" r="5" fill="#778489" />
+    <circle cx="199" cy="62" r="3" fill="#778489" />
+
+    <!-- Center stem -->
+    <path d="M128 256 C128 230, 127 196, 126 132" fill="none" stroke="#005869" stroke-width="7" stroke-linecap="round" />
+
+    <!-- Top -->
+		<g transform="translate(-3,-2)  rotate(65 126 136)">
+			<path d="M126 136 C104 124, 94 106, 98 80 C118 88, 126 106, 126 136 Z" fill="#005869" />
+		</g>
+
+    <!-- Left middle -->
+		<g transform="translate(-2,-17)  rotate(-10 126 186)">
+			<path d="M126 186 C94 180, 72 158, 72 120 C102 126, 122 148, 126 186 Z" fill="#005869" />
+		</g>
+
+    <!-- Left lower -->
+		<g transform="translate(0,-16)  rotate(-12 126 244)">
+			<path d="M126 244 C84 238, 48 210, 44 170 C90 174, 118 202, 126 244 Z" fill="#005869" />
+		</g>
+
+    <!-- Right middle -->
+		<g transform="translate(4,10)  rotate(10 126 174)">
+			<path d="M126 174 C160 166, 184 144, 186 106 C154 114, 132 136, 126 174 Z" fill="#005869" />
+		</g>
+
+    <!-- Right lower -->
+		<g transform="translate(3,3)  rotate(6 126 238)">
+			<path d="M126 238 C176 228, 216 196, 224 150 C176 158, 142 190, 126 238 Z" fill="#005869" />
+		</g>
+  </g>
+</svg>

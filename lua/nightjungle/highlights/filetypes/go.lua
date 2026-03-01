@@ -1,6 +1,7 @@
 return {
   ["@constant.go"] = { fg = "cyan.base" },
   ["@keyword.go"] = { fg = "green.base" },
+  ["@function.call.go"] = { fg = "blue.base" },
   ["@lsp.type.class.go"] = { fg = "green.mid" },
   ["@lsp.type.interface.go"] = { fg = "green.mid" },
   ["@lsp.type.parameter.go"] = { fg = "purple.base" },

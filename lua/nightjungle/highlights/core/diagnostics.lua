@@ -19,4 +19,8 @@ return {
   DiagnosticVirtualTextInfo = { fg = "virtual_text.info" },
   DiagnosticVirtualTextWarn = { fg = "virtual_text.warn" },
   DiagnosticWarn = { fg = "diagnostic.warn" },
+  SpellBad = { link = "DiagnosticUnderlineError" },
+  SpellCap = { link = "DiagnosticUnderlineWarn" },
+  SpellLocal = { link = "DiagnosticUnderlineWarn" },
+  SpellRare = { link = "DiagnosticUnderlineWarn" },
 }

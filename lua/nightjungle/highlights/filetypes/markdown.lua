@@ -1,6 +1,12 @@
 return {
   ["@keyword.markdown"] = { fg = "green.base" },
   ["@markup.list.markdown"] = { fg = "green.soft" },
+  ["@markup.heading.1.markdown"] = { fg = "green.base" },
+  ["@markup.heading.2.markdown"] = { fg = "green.mid" },
+  ["@markup.heading.3.markdown"] = { fg = "purple.base" },
+  ["@markup.heading.4.markdown"] = { fg = "cyan.base" },
+  ["@markup.heading.5.markdown"] = { fg = "blue.base" },
+  ["@markup.heading.6.markdown"] = { fg = "orange.base" },
   ["@markup.quote.markdown"] = { fg = "fg.muted" },
   ["@markup.raw.block.markdown"] = { fg = "purple.base", bg = "bg.default" },
   ["@markup.raw.delimiter.markdown"] = { fg = "fg.muted" },
