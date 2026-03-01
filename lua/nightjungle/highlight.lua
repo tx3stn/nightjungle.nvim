@@ -33,12 +33,45 @@ function M.load_groups(pattern)
   return groups
 end
 
+---Load and merge highlight groups for enabled named modules.
+---@param prefix string
+---@param enabled table<string, boolean>
+---@return table<string, table>
+local function load_enabled_groups(prefix, enabled)
+  if type(enabled) ~= "table" then
+    return {}
+  end
+
+  local groups = {}
+  local names = {}
+
+  for name, is_enabled in pairs(enabled) do
+    if is_enabled then
+      names[#names + 1] = name
+    end
+  end
+
+  table.sort(names)
+
+  for _, name in ipairs(names) do
+    local ok, loaded = pcall(require, string.format("nightjungle.highlights.%s.%s", prefix, name))
+    if ok and type(loaded) == "table" then
+      groups = vim.tbl_deep_extend("force", groups, loaded)
+    end
+  end
+
+  return groups
+end
+
 ---Build the final highlight groups from defaults and user overrides.
 ---@param config table
 ---@return table<string, table>
 function M.groups(config)
   local core = M.load_groups("lua/nightjungle/highlights/core/*.lua")
-  return vim.tbl_deep_extend("force", core, config.highlights or {})
+  local plugins = load_enabled_groups("plugins", config.plugins)
+  local filetypes = load_enabled_groups("filetypes", config.filetypes)
+
+  return vim.tbl_deep_extend("force", core, plugins, filetypes, config.highlights or {})
 end
 
 ---Resolve palette token references to concrete highlight values.

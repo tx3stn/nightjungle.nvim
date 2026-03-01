@@ -35,7 +35,19 @@ M.defaults = {
     transparency = false, -- Use a transparent background?
   },
   palette = {},
-  plugins = {},
+  plugins = {
+    blink = true,
+    lazy = true,
+    lspsaga = true,
+    markview = true,
+    mason = true,
+    moody = true,
+    neotest = true,
+    nvimtree = true,
+    oil = true,
+    snacks = true,
+    telescope = true,
+  },
 }
 
 ---Apply filetype/plugin boolean overrides to a defaults table.
@@ -92,14 +104,8 @@ function M.setup(opts)
 
   local config = vim.tbl_deep_extend("force", vim.deepcopy(M.defaults), opts)
   M.config = M.normalize(config)
-
-  if opts.filetypes then
-    M.config.filetypes = load_files(M.config.filetypes, opts.filetypes)
-  end
-
-  if opts.plugins then
-    M.config.plugins = load_files(M.config.plugins, opts.plugins)
-  end
+  M.config.filetypes = load_files(M.config.filetypes, opts.filetypes)
+  M.config.plugins = load_files(M.config.plugins, opts.plugins)
 end
 
 return M

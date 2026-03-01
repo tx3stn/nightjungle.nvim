@@ -1,0 +1,16 @@
+return {
+  ActionPreviewBorder = { bg = "bg.dark", fg = "bg.dark" },
+  DiagnosticBorder = { bg = "bg.dark", fg = "bg.dark" },
+  DiagnosticShowBorder = { bg = "bg.dark", fg = "bg.dark" },
+  FloatBorder = { bg = "bg.dark", fg = "bg.dark" },
+  HoverBorder = { bg = "bg.dark", fg = "bg.dark" },
+  LspDiagnosticsFloatingError = { bg = "bg.dark", fg = "red.base" },
+  LspSagaDiagnosticBorder = { bg = "bg.dark", fg = "bg.dark" },
+  RenameBorder = { bg = "bg.dark", fg = "bg.dark" },
+  RenameNormal = { bg = "bg.dark", fg = "green.light" },
+  SagaBeacon = { bg = "green.light" },
+  SagaBorder = { bg = "bg.dark", fg = "bg.dark" },
+  SagaFinderName = { fg = "green.light" },
+  SagaTitle = { bg = "green.base", fg = "bg.dark", bold = true },
+  TerminalBorder = { bg = "bg.dark", fg = "bg.dark" },
+}

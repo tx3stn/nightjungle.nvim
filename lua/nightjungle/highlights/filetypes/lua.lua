@@ -1,4 +1,5 @@
 return {
+  ["@constructor.lua"] = { fg = "green.base" },
   ["@field.lua"] = { fg = "cyan.base" },
   ["@function.builtin.lua"] = { fg = "green.light" },
   ["@function.call.lua"] = { fg = "green.light" },

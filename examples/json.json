@@ -1,0 +1,13 @@
+{
+  "name": "nightjungle",
+  "enabled": true,
+  "version": 1,
+  "threshold": 0.75,
+  "nested": {
+    "colors": ["green", "purple", "cyan"],
+    "flags": {
+      "strict": false,
+      "debug": true
+    }
+  }
+}

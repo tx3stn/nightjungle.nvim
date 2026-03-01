@@ -1,0 +1,15 @@
+return {
+  TelescopeBorder = { bg = "bg.selected", fg = "bg.selected" },
+  TelescopeMatching = { fg = "blue.base" },
+  TelescopeNormal = { bg = "bg.selected" },
+  TelescopePreviewBorder = { bg = "bg.dark", fg = "bg.dark" },
+  TelescopePreviewNormal = { bg = "bg.dark" },
+  TelescopePreviewTitle = { fg = "bg.dark", bg = "green.base" },
+  TelescopePromptBorder = { bg = "bg.focus", fg = "bg.focus" },
+  TelescopePromptCounter = { fg = "fg.default" },
+  TelescopePromptNormal = { fg = "fg.default", bg = "bg.focus" },
+  TelescopePromptPrefix = { fg = "green.base", bg = "bg.focus" },
+  TelescopePromptTitle = { fg = "bg.focus", bg = "green.base" },
+  TelescopeResultsTitle = { fg = "bg.dark", bg = "green.mid" },
+  TelescopeSelection = { bg = "green.base" },
+}

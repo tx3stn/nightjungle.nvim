@@ -1,0 +1,69 @@
+return {
+  SnacksPicker = { bg = "bg.dark" },
+  SnacksPickerBorder = { bg = "bg.dark", fg = "bg.dark" },
+  SnacksPickerTitle = { bg = "green.base", fg = "bg.dark" },
+  SnacksPickerFooter = { bg = "bg.dark", fg = "fg.muted" },
+
+  SnacksPickerList = { bg = "bg.dark" },
+  SnacksPickerListBorder = { bg = "bg.dark", fg = "bg.dark" },
+  SnacksPickerListCursorLine = { bg = "green.base", fg = "bg.dark" },
+  SnacksPickerListTitle = { bg = "bg.dark", fg = "fg.default" },
+  SnacksPickerListFooter = { bg = "bg.dark", fg = "fg.muted" },
+
+  SnacksPickerInput = { bg = "bg.dark" },
+  SnacksPickerInputBorder = { bg = "bg.dark", fg = "bg.dark" },
+  SnacksPickerCursorLine = { bg = "green.base", fg = "bg.dark" },
+  SnacksPickerInputTitle = { bg = "bg.dark", fg = "fg.default" },
+  SnacksPickerInputFooter = { bg = "bg.dark", fg = "fg.muted" },
+
+  SnacksPickerPreview = { bg = "bg.dark" },
+  SnacksPickerPreviewBorder = { bg = "bg.dark", fg = "bg.dark" },
+  SnacksPickerPreviewTitle = { bg = "bg.dark", fg = "fg.default" },
+  SnacksPickerPreviewFooter = { bg = "bg.dark", fg = "fg.muted" },
+  SnacksPickerPreviewCursorLine = { bg = "bg.dark" },
+
+  SnacksPickerNotificationMessage = { fg = "fg.default", bg = "bg.dark" },
+  SnacksPickerTime = { fg = "blue.base", bg = "bg.dark" },
+  SnacksPickerSpecial = { fg = "green.base", bg = "bg.dark" },
+  SnacksPickerDimmed = { fg = "fg.muted", bg = "bg.dark" },
+
+  SnacksDashboardIcon = { fg = "green.base" },
+  SnacksDashboardKey = { fg = "green.base" },
+  SnacksDashboardSpecial = { fg = "purple.base" },
+
+  SnacksNotifier = { bg = "bg.dark" },
+  SnacksNotifierMinimal = { bg = "bg.dark" },
+  SnacksNotifierHistory = { bg = "bg.dark" },
+  SnacksNotifierHistoryTitle = { fg = "green.light", bg = "bg.dark" },
+  SnacksNotifierHistoryDateTime = { fg = "blue.base", bg = "bg.dark" },
+
+  SnacksNotifierError = { fg = "diagnostic.error", bg = "bg.dark" },
+  SnacksNotifierIconError = { fg = "diagnostic.error", bg = "bg.dark" },
+  SnacksNotifierBorderError = { fg = "bg.dark", bg = "bg.dark" },
+  SnacksNotifierTitleError = { fg = "diagnostic.error", bg = "bg.dark" },
+  SnacksNotifierFooterError = { fg = "diagnostic.error", bg = "bg.dark" },
+
+  SnacksNotifierWarn = { fg = "diagnostic.warn", bg = "bg.dark" },
+  SnacksNotifierIconWarn = { fg = "diagnostic.warn", bg = "bg.dark" },
+  SnacksNotifierBorderWarn = { fg = "bg.dark", bg = "bg.dark" },
+  SnacksNotifierTitleWarn = { fg = "diagnostic.warn", bg = "bg.dark" },
+  SnacksNotifierFooterWarn = { fg = "diagnostic.warn", bg = "bg.dark" },
+
+  SnacksNotifierInfo = { fg = "diagnostic.info", bg = "bg.dark" },
+  SnacksNotifierIconInfo = { fg = "diagnostic.info", bg = "bg.dark" },
+  SnacksNotifierBorderInfo = { fg = "bg.dark", bg = "bg.dark" },
+  SnacksNotifierTitleInfo = { fg = "diagnostic.info", bg = "bg.dark" },
+  SnacksNotifierFooterInfo = { fg = "diagnostic.info", bg = "bg.dark" },
+
+  SnacksNotifierDebug = { fg = "diagnostic.hint", bg = "bg.dark" },
+  SnacksNotifierIconDebug = { fg = "diagnostic.hint", bg = "bg.dark" },
+  SnacksNotifierBorderDebug = { fg = "bg.dark", bg = "bg.dark" },
+  SnacksNotifierTitleDebug = { fg = "diagnostic.hint", bg = "bg.dark" },
+  SnacksNotifierFooterDebug = { fg = "diagnostic.hint", bg = "bg.dark" },
+
+  SnacksNotifierTrace = { fg = "diagnostic.info", bg = "bg.dark" },
+  SnacksNotifierIconTrace = { fg = "diagnostic.info", bg = "bg.dark" },
+  SnacksNotifierBorderTrace = { fg = "bg.dark", bg = "bg.dark" },
+  SnacksNotifierTitleTrace = { fg = "diagnostic.info", bg = "bg.dark" },
+  SnacksNotifierFooterTrace = { fg = "diagnostic.info", bg = "bg.dark" },
+}

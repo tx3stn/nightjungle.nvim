@@ -32,6 +32,7 @@ return {
   PmenuThumb = { bg = "fg.muted" },
   Search = { fg = "yellow.base", bg = "bg.dark" },
   SignColumn = { fg = "fg.muted", bg = "bg.default" },
+  Special = { fg = "green.base" },
   StatusLine = { fg = "fg.default", bg = "bg.default" },
   StatusLineNC = { fg = "fg.muted", bg = "bg.default" },
   StatusLineTerm = { fg = "fg.default", bg = "bg.focus" },
