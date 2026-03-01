@@ -9,6 +9,17 @@
   <em>Dark & green with pops of color</em>
 </p>
 
+![golang code](https://github.com/user-attachments/assets/b9eff7fc-4edc-4c3f-8cfe-63a3f0969ed9)
+
+<details>
+  <summary>More screenshots (click to expand)</summary>
+
+  ![typescript code](https://github.com/user-attachments/assets/ddefacb5-20e1-418b-8f66-c5fa47eac7d1)
+
+ View more files in the ./examples directory.
+
+</details>
+
 ## Overview
 
 `nightjungle.nvim` is a Neovim colorscheme with lots of green, dark backgrounds and pops of color.
