@@ -5,4 +5,5 @@ return {
   NvimTreeOpenedFolderName = { fg = "green.base" },
   NvimTreeRootFolder = { fg = "purple.base" },
   NvimTreeWindowPicker = { bg = "green.base", fg = "bg.default" },
+  NvimTreeEmptyFolderName = { fg = "green.mid" },
 }

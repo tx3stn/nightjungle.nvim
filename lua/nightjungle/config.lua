@@ -1,11 +1,17 @@
 local base_palette = require("nightjungle.palette")
 local utils = require("nightjungle.utils")
 
-local M = {}
+local M = {
+  theme = "nightjungle",
+  config = {},
+  is_setup = false,
+}
 
 M.defaults = {
+  caching = true,
   cache_path = vim.fn.expand(vim.fn.stdpath("cache") .. "/nightjungle"), -- The path to the cache directory
   cache_suffix = "_compiled",
+  debug = false,
   filetypes = { -- Enable/disable specific plugins
     bash = true,
     c = true,
@@ -50,6 +56,8 @@ M.defaults = {
   },
 }
 
+M.config = vim.deepcopy(M.defaults)
+
 ---Apply filetype/plugin boolean overrides to a defaults table.
 ---@param files table<string, boolean>
 ---@param override table<string, boolean>
@@ -87,6 +95,10 @@ function M.normalize(opts)
   end
 
   return {
+    caching = input.caching ~= nil and input.caching or M.defaults.caching,
+    cache_path = type(input.cache_path) == "string" and input.cache_path or M.defaults.cache_path,
+    cache_suffix = type(input.cache_suffix) == "string" and input.cache_suffix or M.defaults.cache_suffix,
+    debug = input.debug == true,
     styles = utils.merge_tables(M.defaults.styles, input.styles),
     palette = utils.merge_tables(base_palette, palette_overrides),
     highlights = utils.merge_tables(M.defaults.highlights, input.highlights),
@@ -106,6 +118,27 @@ function M.setup(opts)
   M.config = M.normalize(config)
   M.config.filetypes = load_files(M.config.filetypes, opts.filetypes)
   M.config.plugins = load_files(M.config.plugins, opts.plugins)
+  M.is_setup = true
+end
+
+---Get information relating to where the cache is stored.
+---@param opts? table
+---@return string,string
+function M.get_cached_info(opts)
+  opts = opts or {}
+
+  local theme = opts.theme or M.theme
+  local cache_path = opts.cache_path or M.config.cache_path
+  local theme_path = utils.join_paths(cache_path, theme .. M.config.cache_suffix)
+
+  return cache_path, theme_path
+end
+
+---Create a hash from the config.
+---@return string|number
+function M.hash()
+  local hash = require("nightjungle.lib.hash").hash(M.config)
+  return hash and hash or 0
 end
 
 return M

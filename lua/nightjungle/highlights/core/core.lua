@@ -40,6 +40,7 @@ return {
   TabLine = { fg = "green.base", bg = "bg.default" },
   TabLineFill = { bg = "bg.default" },
   TabLineSel = { fg = "bg.dark", bg = "green.base" },
+  Title = { fg = "green.base" },
   VertSplit = { fg = "bg.dark", bg = "bg.default" },
   Visual = { bg = "bg.selected" },
   VisualNOS = { bg = "bg.selected" },

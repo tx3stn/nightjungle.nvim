@@ -30,6 +30,7 @@ return {
   SnacksDashboardIcon = { fg = "green.base" },
   SnacksDashboardKey = { fg = "green.base" },
   SnacksDashboardSpecial = { fg = "purple.base" },
+  SnacksDashboardTitle = { fg = "green.base" },
 
   SnacksNotifier = { bg = "bg.dark" },
   SnacksNotifierMinimal = { bg = "bg.dark" },
