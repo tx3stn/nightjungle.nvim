@@ -1,0 +1,18 @@
+return {
+  ["@constant.go"] = { fg = "cyan.base" },
+  ["@keyword.go"] = { fg = "green.base" },
+  ["@lsp.type.class.go"] = { fg = "green.mid" },
+  ["@lsp.type.interface.go"] = { fg = "green.mid" },
+  ["@lsp.type.parameter.go"] = { fg = "purple.base" },
+  ["@lsp.type.property.go"] = { fg = "cyan.base" },
+  ["@lsp.type.type.go"] = { fg = "green.mid" },
+  ["@lsp.type.variable.go"] = { fg = "purple.base" },
+  ["@lsp.typemod.function.defaultLibrary.go"] = { fg = "green.light" },
+  ["@lsp.typemod.variable.defaultLibrary.go"] = { fg = "purple.base" },
+  ["@lsp.typemod.variable.readonly.go"] = { fg = "purple.base" },
+  ["@operator.go"] = { fg = "green.base" },
+  ["@type.go"] = { fg = "green.mid" },
+  ["@type.builtin.go"] = { fg = "purple.base" },
+  ["@type.definition.go"] = { fg = "green.mid" },
+  ["@variable.go"] = { fg = "purple.base" },
+}

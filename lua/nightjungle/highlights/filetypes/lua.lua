@@ -1,0 +1,18 @@
+return {
+  ["@field.lua"] = { fg = "cyan.base" },
+  ["@function.builtin.lua"] = { fg = "green.light" },
+  ["@function.call.lua"] = { fg = "green.light" },
+  ["@keyword.lua"] = { fg = "green.base" },
+  ["@keyword.conditional.lua"] = { fg = "green.base" },
+  ["@keyword.function.lua"] = { fg = "green.base" },
+  ["@keyword.operator.lua"] = { fg = "green.base" },
+  ["@lsp.type.class.lua"] = { fg = "green.mid" },
+  ["@lsp.type.property.lua"] = { fg = "green.light" },
+  ["@lsp.typemod.function.defaultLibrary.lua"] = { fg = "green.light" },
+  ["@lsp.typemod.variable.defaultLibrary.lua"] = { fg = "purple.base" },
+  ["@method.lua"] = { fg = "green.light" },
+  ["@operator.lua"] = { fg = "green.base" },
+  ["@parameter.lua"] = { fg = "purple.base" },
+  ["@punctuation.bracket.lua"] = { fg = "green.base" },
+  ["@string.lua"] = { fg = "fg.default" },
+}

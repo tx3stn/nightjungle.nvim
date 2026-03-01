@@ -1,0 +1,18 @@
+return {
+  ["@comment.bash"] = { fg = "fg.muted" },
+  ["@conditional.bash"] = { fg = "green.base" },
+  ["@constant.bash"] = { fg = "green.mid" },
+  ["@function.bash"] = { fg = "green.light" },
+  ["@function.call.bash"] = { fg = "green.light" },
+  ["@keyword.bash"] = { fg = "green.base" },
+  ["@keyword.directive.bash"] = { fg = "fg.muted" },
+  ["@number.bash"] = { fg = "orange.base" },
+  ["@operator.bash"] = { fg = "green.base" },
+  ["@parameter.bash"] = { fg = "purple.base" },
+  ["@punctuation.bracket.bash"] = { fg = "green.base" },
+  ["@punctuation.delimiter.bash"] = { fg = "green.base" },
+  ["@repeat.bash"] = { fg = "green.base" },
+  ["@string.bash"] = { fg = "fg.default" },
+  ["@variable.bash"] = { fg = "purple.base" },
+  ["@variable.parameter.bash"] = { fg = "purple.base" },
+}

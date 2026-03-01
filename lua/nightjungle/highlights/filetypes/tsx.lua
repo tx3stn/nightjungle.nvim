@@ -1,0 +1,18 @@
+return {
+  ["@constructor.tsx"] = { fg = "green.mid" },
+  ["@keyword.tsx"] = { fg = "green.base" },
+  ["@lsp.type.class.tsx"] = { fg = "green.mid" },
+  ["@lsp.type.interface.tsx"] = { fg = "green.mid" },
+  ["@lsp.type.interface.typescriptreact"] = { fg = "green.mid" },
+  ["@lsp.type.member.typescriptreact"] = { fg = "green.light" },
+  ["@lsp.type.property.tsx"] = { fg = "cyan.base" },
+  ["@lsp.type.property.typescriptreact"] = { fg = "green.light" },
+  ["@lsp.type.variable.tsx"] = { fg = "purple.base" },
+  ["@operator.tsx"] = { fg = "green.base" },
+  ["@punctuation.bracket.tsx"] = { fg = "green.base" },
+  ["@tag.attribute.tsx"] = { fg = "cyan.base" },
+  ["@tag.builtin.tsx"] = { fg = "green.light" },
+  ["@tag.tsx"] = { fg = "green.mid" },
+  ["@type.tsx"] = { fg = "green.mid" },
+  ["@variable.tsx"] = { fg = "purple.base" },
+}
