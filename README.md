@@ -99,10 +99,10 @@ highlights = {
 
 `nightjungle.nvim` registers the following commands on load:
 
-- `:NightJungleBGToggle` - toggles `options.transparency`, recompiles cache, and reloads the colorscheme.
-- `:NightjungleColors` - opens a scratch buffer listing active palette tokens and values.
-- `:NightjungleCache` - compiles and writes cache artifacts.
-- `:NightjungleCacheClear` - clears cache artifacts.
+- `:NightJungleBGToggle` / `require("nightjungle").toggle_background()` - toggles `options.transparency`, recompiles cache, and reloads the colorscheme.
+- `:NightjungleColors` / `require("nightjungle").open_colors()` - opens a scratch buffer listing active palette tokens and values.
+- `:NightjungleCache` / `require("nightjungle").cache()` - compiles and writes cache artifacts.
+- `:NightjungleCacheClear` / `require("nightjungle").clean()` - clears cache artifacts.
 
 ## Cache Artifacts
 
