@@ -18,6 +18,7 @@ jobs:
       - name: setup styLua
         uses: JohnnyMorganz/stylua-action@v4
         with:
+          token: ${{ secrets.GITHUB_TOKEN }}
           version: latest
           args: --check ./
 
