@@ -1,0 +1,42 @@
+name: lint and test
+
+on:
+  push:
+    branches:
+      - main
+  pull_request: ~
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event_name == 'pull_request' && github.head_ref || github.sha }}
+  cancel-in-progress: true
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - name: setup styLua
+        uses: JohnnyMorganz/stylua-action@v4
+        with:
+          version: latest
+          args: --check ./
+
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest]
+        nvim_tag: [nightly, v0.11.0]
+    name: ${{ matrix.os }} / ${{ matrix.nvim_tag }}
+    runs-on: ${{ matrix.os }}
+    env:
+      NVIM: ${{ matrix.os == 'windows-latest' && 'nvim-win64\\bin\\nvim.exe' || 'nvim' }}
+    steps:
+      - uses: actions/checkout@v6
+      - uses: tree-sitter/setup-action/cli@v2
+      - name: install neovim
+        run: ./.github/workflows/install-nvim.sh
+      - name: run tests
+        run: |
+          $NVIM --version
+          make test
