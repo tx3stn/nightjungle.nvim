@@ -1,6 +1,9 @@
 local cfg = require("nightjungle.config")
+local palette = require("nightjungle.palette")
 local util = require("nightjungle.utils")
 local commands = require("nightjungle.commands")
+local cache = require("nightjungle.lib.cache")
+local compiler = require("nightjungle.lib.compile")
 
 local M = {
   theme = "nightjungle",
@@ -30,9 +33,6 @@ end
 ---Compile all themes and cache them.
 ---@return nil
 function M.cache()
-  local cache = require("nightjungle.lib.cache")
-  local compiler = require("nightjungle.lib.compile")
-
   cache.write({
     theme = cfg.theme,
     cache = compiler.compile(cfg.theme),
@@ -50,10 +50,67 @@ end
 ---Clean all cache files.
 ---@return nil
 function M.clean()
-  local cache = require("nightjungle.lib.cache")
-
   cache.clean({ theme = cfg.theme })
   cache.clean({ file = "cache" })
+end
+
+---Return the active Nightjungle palette as key/value pairs.
+---@return table<string, string>
+function M.get_colors()
+  local active = type(cfg.config) == "table" and cfg.config.palette or nil
+  if type(active) == "table" and next(active) ~= nil then
+    return vim.deepcopy(active)
+  end
+
+  return vim.deepcopy(palette)
+end
+
+---Toggle transparency mode and reload the theme.
+---@return boolean transparency_enabled
+function M.toggle_background()
+  local conf = M.get_config() or {}
+  local options = conf.options or {}
+
+  options.transparency = not (options.transparency == true)
+  conf.options = options
+
+  M.cache()
+  M.load()
+
+  return options.transparency == true
+end
+
+---Open a scratch buffer with the active palette values.
+---@return integer buffer
+---@return integer color_count
+function M.open_colors()
+  local colors = M.get_colors()
+  local tokens = {}
+
+  for token, value in pairs(colors) do
+    if type(token) == "string" and type(value) == "string" then
+      tokens[#tokens + 1] = token
+    end
+  end
+
+  table.sort(tokens)
+
+  local lines = {}
+  for _, token in ipairs(tokens) do
+    lines[#lines + 1] = string.format("%-28s %s", token, colors[token])
+  end
+
+  local buf = vim.api.nvim_create_buf(false, true)
+  vim.api.nvim_set_option_value("buftype", "nofile", { buf = buf })
+  vim.api.nvim_set_option_value("bufhidden", "wipe", { buf = buf })
+  vim.api.nvim_set_option_value("swapfile", false, { buf = buf })
+  vim.api.nvim_set_option_value("modifiable", true, { buf = buf })
+  vim.api.nvim_buf_set_lines(buf, 0, -1, false, lines)
+  vim.api.nvim_set_option_value("modifiable", false, { buf = buf })
+  vim.api.nvim_set_option_value("readonly", true, { buf = buf })
+  vim.api.nvim_set_current_buf(buf)
+
+  return buf, #lines
 end
 
 ---Determine if the cache is valid or if it needs to be regenerated.
