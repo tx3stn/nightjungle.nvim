@@ -6,7 +6,7 @@ return {
   NvimTreeFolderName = { fg = "green.base" },
   NvimTreeGitDirty = { fg = "red.base" },
   NvimTreeGitMerge = { fg = "cyan.base" },
-  NvimTreeGitNew = { fg = "green.light" },
+  NvimTreeGitNew = { fg = "green.mid" },
   NvimTreeGitRenamed = { fg = "yellow.base" },
   NvimTreeGitStaged = { fg = "yellow.base" },
   NvimTreeGitDeleted = { fg = "red.base" },
