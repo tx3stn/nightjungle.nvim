@@ -12,15 +12,15 @@ describe("nightjungle.nvim core funtionality", function()
   before_each(function()
     utils.new_instance(nvim)
     nvim.lua([[
-                vim.cmd("colorscheme nightjungle")
-                vim.cmd(":e tests/files/text.txt")
-            ]])
+			vim.cmd("colorscheme nightjungle")
+			vim.cmd(":e tests/files/text.txt")
+    ]])
   end)
 
   after_each(function()
     nvim.lua([[
-                require("nightjungle").clean()
-            ]])
+			require("nightjungle").clean()
+    ]])
   end)
 
   it("should load with no errors", function()
