@@ -6,8 +6,8 @@ deps:
 	@test -d deps/mini.nvim || git clone --filter=blob:none https://github.com/echasnovski/mini.nvim deps/mini.nvim
 
 format:
-	stylua lua 
-	stylua --check lua
+	stylua ./
+	stylua --check ./
 
 test: deps
 	nvim --headless --noplugin -u ./tests/config/minimal.lua -c "lua MiniTest.run()"
