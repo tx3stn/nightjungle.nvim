@@ -35,6 +35,10 @@ return {
   SnacksNotifier = { bg = "bg.dark" },
   SnacksNotifierMinimal = { bg = "bg.dark" },
   SnacksNotifierHistory = { bg = "bg.dark" },
+  SnacksNotifierBorder = { fg = "bg.dark", bg = "bg.dark" },
+  SnacksNotifierTitle = { fg = "fg.default", bg = "bg.dark" },
+  SnacksNotifierFooter = { fg = "fg.muted", bg = "bg.dark" },
+  SnacksNotifierIcon = { fg = "fg.default", bg = "bg.dark" },
   SnacksNotifierHistoryTitle = { fg = "green.light", bg = "bg.dark" },
   SnacksNotifierHistoryDateTime = { fg = "blue.base", bg = "bg.dark" },
 
