@@ -39,7 +39,7 @@ return {
   PmenuKindSel = { fg = "fg.default", bg = "bg.dark" },
   PmenuSbar = { bg = "bg.dark" },
   PmenuSel = { fg = "fg.default", bg = "bg.dark" },
-  PmenuThumb = { bg = "fg.muted" },
+  PmenuThumb = { bg = "green.base" },
   Question = { fg = "green.light", bg = "bg.default" },
   Search = { fg = "yellow.base", bg = "bg.dark" },
   SignColumn = { fg = "fg.muted", bg = "NONE" },
