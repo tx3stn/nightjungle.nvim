@@ -18,6 +18,7 @@ M.defaults = {
     comment = true,
     dockerfile = true,
     go = true,
+    hcl = true,
     html = true,
     java = true,
     javascript = true,
@@ -30,6 +31,7 @@ M.defaults = {
     ruby = true,
     rust = true,
     scss = true,
+    terraform = true,
     toml = true,
     tsx = true,
     typescript = true,
@@ -40,6 +42,12 @@ M.defaults = {
   highlights = {}, -- Add/override highlights
   options = {
     transparency = false, -- Use a transparent background?
+  },
+  styles = {
+    comments = { italic = true },
+    keywords = { italic = true },
+    functions = { bold = true },
+    strings = {},
   },
   palette = {},
   plugins = {

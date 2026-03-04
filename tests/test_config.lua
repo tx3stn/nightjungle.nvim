@@ -83,7 +83,28 @@ describe("nightjungle.nvim config", function()
     ]])
 
     local output = nvim.lua_get([[vim.api.nvim_exec("hi Keyword", true)]])
-    equal("Keyword        xxx guifg=#123456", output)
+    equal(true, output:match("guifg=#123456") ~= nil)
+  end)
+
+  it("should apply keyword style overrides without changing color", function()
+    nvim.lua([[
+      local nightjungle = require("nightjungle")
+
+      nightjungle.setup({
+        cache_path = vim.fn.expand(vim.fn.stdpath("cache") .. "/nightjungle_test_config"),
+        styles = {
+          keywords = {
+            italic = true,
+          },
+        },
+      })
+
+      vim.cmd("colorscheme nightjungle")
+    ]])
+
+    local output = nvim.lua_get([[vim.api.nvim_exec("hi Keyword", true)]])
+    equal(true, output:match("italic") ~= nil)
+    equal(true, output:match("guifg=#005869") ~= nil)
   end)
 
   teardown(function()

@@ -1,7 +1,7 @@
 return {
   ["@function.call.typescript"] = { fg = "green.light" },
   ["@function.typescript"] = { fg = "green.light" },
-  ["@keyword.typescript"] = { fg = "green.base" },
+  ["@keyword.typescript"] = { link = "@keyword" },
   ["@lsp.mod.defaultLibrary.typescript"] = { fg = "purple.base" },
   ["@lsp.mod.readonly.typescript"] = { fg = "purple.base" },
   ["@lsp.type.enum.typescript"] = { fg = "green.mid" },
