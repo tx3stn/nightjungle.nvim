@@ -1,5 +1,6 @@
 return {
   ["@constant.go"] = { fg = "cyan.base" },
+  ["@constructor.go"] = { fg = "blue.base" },
   ["@keyword.go"] = { fg = "green.base" },
   ["@function.call.go"] = { fg = "blue.base" },
   ["@lsp.type.class.go"] = { fg = "green.mid" },
