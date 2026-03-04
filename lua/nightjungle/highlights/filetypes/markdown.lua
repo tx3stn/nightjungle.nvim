@@ -14,7 +14,7 @@ return {
   markdownH5 = { fg = "blue.base", bg = "NONE" },
   markdownH6 = { fg = "orange.base", bg = "NONE" },
   markdownHeadingDelimiter = { fg = "fg.muted", bg = "NONE" },
-  ["@markup.quote.markdown"] = { fg = "fg.muted" },
+  ["@markup.quote.markdown"] = { fg = "green.soft" },
   ["@markup.raw.block.markdown"] = { fg = "purple.base", bg = "NONE" },
   markdownCode = { fg = "purple.base", bg = "NONE" },
   markdownCodeBlock = { fg = "purple.base", bg = "NONE" },
