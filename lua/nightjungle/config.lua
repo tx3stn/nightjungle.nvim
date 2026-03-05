@@ -52,6 +52,7 @@ M.defaults = {
   palette = {},
   plugins = {
     blink = true,
+    gitsigns = true,
     lazy = true,
     lspsaga = true,
     markview = true,

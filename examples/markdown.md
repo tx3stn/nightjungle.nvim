@@ -25,6 +25,7 @@ require("nightjungle").setup({
     Visual = { bg = "bg.selected" },
   },
   plugins = {
+    gitsigns = true,
     telescope = true,
     snacks = true,
   },

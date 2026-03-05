@@ -42,9 +42,6 @@ func printArea(s Shape) {
 func main() {
 	fmt.Println(Greeting)
 
-	circle := Circle{Radius: 5}
-	rectangle := Rectangle{Length: 4, Width: 4}
-
 	printArea(circle)
 	printArea(rectangle)
 }

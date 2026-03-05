@@ -24,7 +24,7 @@ View more files in `./examples`.
 `nightjungle.nvim` is a Neovim colorscheme with lots of green, dark backgrounds and pops of color.
 
 Very much inspired by my use of [OneDarkPro](https://github.com/olimorris/onedarkpro.nvim) for
-many years with some overriden base colors.
+many years with some overridden base colors.
 
 ## Installation
 
@@ -59,6 +59,7 @@ require("nightjungle").setup({
     CursorLine = { bg = "bg.focus" },
   },
   plugins = {
+    gitsigns = true,
     telescope = true,
     snacks = true,
     markview = true,
@@ -71,17 +72,44 @@ require("nightjungle").setup({
   options = {
     transparency = false,
   },
+  styles = {
+    comments = { italic = true },
+    keywords = { italic = true },
+    functions = { bold = true },
+    strings = {},
+  },
 })
 ```
 
 ### Key Options
 
 - `caching` (`boolean`): Enables compiled cache loading.
+- `cache_path` (`string`): Directory path for generated cache files.
+- `cache_suffix` (`string`): Suffix appended to compiled cache file names.
+- `debug` (`boolean`): Enables debug cache generation.
 - `palette` (`table`): Override existing palette tokens.
 - `highlights` (`table`): Add or override highlight groups.
+- `styles` (`table`): Apply style flags to common syntax targets (`comments`, `keywords`, `functions`, `strings`).
 - `plugins` (`table<string, boolean>`): Enable/disable plugin highlight modules (leave empty to enable all defaults).
 - `filetypes` (`table<string, boolean>`): Enable/disable filetype highlight modules (leave empty to enable all defaults).
 - `options.transparency` (`boolean`): Use a transparent background.
+
+Disable all plugin/filetype modules and opt into a small set:
+
+```lua
+require("nightjungle").setup({
+  plugins = {
+    all = false,
+    gitsigns = true,
+    telescope = true,
+  },
+  filetypes = {
+    all = false,
+    lua = true,
+    markdown = true,
+  },
+})
+```
 
 ### Overriding Highlights
 
@@ -92,6 +120,7 @@ highlights = {
   NormalFloat = { fg = "fg.default", bg = "bg.dark" },
   DiagnosticUnderlineError = { sp = "diagnostic.error", undercurl = true },
   GitSignsAdd = { fg = "git.add" },
+  WinSeparator = { link = "FloatBorder" },
 }
 ```
 
