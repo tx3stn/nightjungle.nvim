@@ -7,7 +7,7 @@ return {
   ["@lsp.type.information"] = { fg = "diagnostic.info" },
   ["@lsp.type.interface"] = { fg = "green.mid" },
   ["@lsp.type.keyword"] = { fg = "green.base" },
-  ["@lsp.type.member"] = { fg = "cyan.base" },
+  ["@lsp.type.member"] = { fg = "green.light" },
   ["@lsp.type.method"] = { fg = "green.light" },
   ["@lsp.type.parameter"] = { fg = "purple.base" },
   ["@lsp.type.property"] = { fg = "cyan.base" },

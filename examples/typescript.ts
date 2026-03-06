@@ -42,4 +42,22 @@ aFunction({
 	prop5: 35,
 });
 
+export type AppRoute = "connect" | "hub";
+
+export class AppNavigator {
+	private route: AppRoute = "connect";
+
+	currentRoute(): AppRoute {
+		return this.route;
+	}
+
+	showConnect(): void {
+		this.route = "connect";
+	}
+
+	showHub(): void {
+		this.route = "hub";
+	}
+}
+
 export { AnEnum, aFunction };
