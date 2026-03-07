@@ -7,6 +7,7 @@ return {
   ["@lsp.type.enum.typescript"] = { fg = "green.mid" },
   ["@lsp.type.interface.typescript"] = { fg = "green.mid" },
   ["@lsp.typemod.class.defaultLibrary.typescript"] = { fg = "cyan.base" },
+  ["@lsp.typemod.function.readonly.typescript"] = { fg = "green.light" },
   ["@lsp.typemod.interface.defaultLibrary.typescript"] = { fg = "cyan.base" },
   ["@lsp.typemod.enumMember.declaration.typescript"] = { fg = "green.light" },
   ["@lsp.typemod.enumMember.readonly.typescript"] = { fg = "purple.base" },
