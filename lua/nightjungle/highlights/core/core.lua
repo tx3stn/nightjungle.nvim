@@ -8,7 +8,7 @@ return {
   CursorLineFold = { fg = "fg.muted", bg = "bg.focus" },
   CursorLineNr = { fg = "fg.default", bg = "bg.focus" },
   CursorLineSign = { fg = "fg.muted", bg = "bg.default" },
-  EndOfBuffer = { fg = "bg.default", bg = "bg.default" },
+  EndOfBuffer = { fg = "bg.default", bg = "NONE" },
   ErrorMsg = { fg = "red.base" },
   FloatBorder = { fg = "bg.dark", bg = "bg.dark" },
   FloatFooter = { fg = "bg.dark", bg = "bg.dark" },
