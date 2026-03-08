@@ -8,6 +8,8 @@ return {
   LspSagaDiagnosticBorder = { bg = "bg.dark", fg = "bg.dark" },
   RenameBorder = { bg = "bg.dark", fg = "bg.dark" },
   RenameNormal = { bg = "bg.dark", fg = "green.light" },
+  SagaNormal = { bg = "bg.dark", fg = "fg.default" },
+  SagaNormalNC = { bg = "bg.dark", fg = "fg.default" },
   SagaBeacon = { bg = "green.light" },
   SagaBorder = { bg = "bg.dark", fg = "bg.dark" },
   SagaFinderName = { fg = "green.light" },
